@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .image {
+        max-width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
